@@ -272,14 +272,13 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding: 60px 15px;
   margin-top: 0;
   margin-bottom: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
   gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -292,6 +291,7 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 .advantage__list .advantage__text {
   color: var(--text-grey-color);
