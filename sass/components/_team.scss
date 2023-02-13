@@ -1,0 +1,102 @@
+.our-team {
+  background-color: #f5f4fa;
+}
+.our-team-names {
+  color: var(--text-black-color);
+  text-align: center;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.our-team-position {
+  text-align: center;
+  color: var(--text-grey-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+}
+
+.our-team-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--text-black-color);
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+
+.team__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.our-team li {
+  background-color: var(--text-white-color);
+}
+
+.icon-link {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition-property: background-color, box-shadow;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-team-link {
+  transition-property: fill;
+  transition: ease-in 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.static-color {
+  fill: var(--fill-color-svg-static);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--text-link-color);
+
+  .icon-team-link {
+    fill: var(--text-white-color);
+  }
+}

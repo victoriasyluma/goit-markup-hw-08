@@ -1,0 +1,22 @@
+@import '../utils/mixins.scss';
+
+a.logo {
+  color: var(--text-black-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+
+  @include transition('color');
+
+  .logo__item {
+    color: var(--text-link-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--text-link-color);
+  }
+}

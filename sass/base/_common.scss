@@ -1,0 +1,28 @@
+@import '../utils/breakpoints';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-family);
+  background-color: #ffffff;
+}
+
+.container {
+  border: 2px solid red;
+  margin: 0 auto;
+  width: 480px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
