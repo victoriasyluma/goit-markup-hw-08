@@ -19,14 +19,31 @@
   </head>
   <body>
     <!-- Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href="./index.html">
             <span class="logo__item">Web</span>Studio
           </a>
+          <button type="button" class="mobile-menu is-open">
+            <svg
+              class="menu"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#burder-menu"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
 
-          <ul class="navigations__list">
+          <!-- <ul class="navigations__list">
             <li class="navigations__item">
               <a class="navigations__link selected" href="./index.html"
                 >Студія</a
@@ -40,12 +57,10 @@
             <li class="navigations__item">
               <a class="navigations__link" href="">Контакти</a>
             </li>
-          </ul>
+          </ul> -->
         </nav>
 
-  
-
-    <ul class="contact">
+        <!-- <ul class="contact" >
           <li class="contact__list">
             <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16" height="12">
@@ -63,13 +78,13 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
-    </header> -->
+    </header>
 
     <!--Hero-->
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для<br />
@@ -79,7 +94,7 @@
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--our advantage-->
 
@@ -187,7 +202,7 @@
 
       <!--our team-->
 
-      <!-- <section class="section our-team">
+      <section class="section our-team">
         <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="team__list">
@@ -196,7 +211,7 @@
                 class="team__img"
                 src="./images/igor.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
+                width="450"
               />
               <h3 class="our-team-names">Ігор Дем'яненко</h3>
               <p lang="en" class="our-team-position">Product Designer</p>
@@ -257,7 +272,7 @@
                 class="team__img"
                 src="./images/olga.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
+                width="450"
               />
               <h3 class="our-team-names">Ольга Рєпіна</h3>
               <p lang="en" class="our-team-position">Frontend Developer</p>
@@ -318,7 +333,7 @@
                 class="team__img"
                 src="./images/mucola.jpg"
                 alt="Микола Тарасов"
-                width="270"
+                width="450"
               />
               <h3 class="our-team-names">Микола Тарасов</h3>
               <p lang="en" class="our-team-position">Marketing</p>
@@ -379,7 +394,7 @@
                 class="team__img"
                 src="./images/mihail.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                width="450"
               />
               <h3 class="our-team-names">Михайло Єрмаков</h3>
               <p lang="en" class="our-team-position">UI Designer</p>
@@ -436,15 +451,15 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--our-clients-->
-      <!-- <section class="our-clients">
+      <section class="section our-clients">
         <div class="container">
           <h2 class="our-team-title">Постійні клієнти</h2>
 
-          <ul class="work-example-list gap-30px">
-            <li>
+          <ul class="clients__list gap-30px">
+            <li class="clients__item">
               <a class="link-clients" href="">
                 <svg
                   class="link-clients-logo static-color"
@@ -456,7 +471,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="clients__item">
               <a class="link-clients" href="">
                 <svg
                   class="link-clients-logo static-color"
@@ -467,7 +482,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="link-clients" href="">
                 <svg
                   class="link-clients-logo static-color"
@@ -479,7 +494,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="clients__item">
               <a class="link-clients" href="">
                 <svg
                   class="link-clients-logo static-color"
@@ -491,7 +506,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="clients__item">
               <a class="link-clients" href="">
                 <svg
                   class="link-clients-logo static-color"
@@ -503,7 +518,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="clients__item">
               <a class="link-clients" href="">
                 <svg
                   class="link-clients-logo static-color"
@@ -516,14 +531,14 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--Contact information-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-container-item">
           <a class="logo" href=""><span class="logo__item">Web</span>Studio </a>
 
           <address class="footer-address">
@@ -555,7 +570,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="footer-container-item">
           <span class="form-title">приєднуйтесь</span>
           <ul class="social-links-form">
             <li>
@@ -608,7 +623,7 @@
           </ul>
         </div>
 
-        <div class="footer-email-input">
+        <div class="footer-container-item footer-email-input">
           <span class="form-title">Підпишіться на розсилку</span>
           <form class="form-email">
             <input
@@ -626,7 +641,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <!--SEND INFORMATION MODAL-->
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">

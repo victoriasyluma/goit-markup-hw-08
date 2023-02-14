@@ -37,12 +37,26 @@ ul {
 }
 
 a {
+  outline: none;
   text-decoration: none;
   color: inherit;
 }
 
 textarea {
   resize: none;
+}
+
+.burger-menu {
+  display: inline-block;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 40px;
+  height: 40px;
 }
 
 .header {
@@ -52,7 +66,7 @@ textarea {
   margin-right: 93px;
 }
 
-.header__container {
+.container.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +76,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 60px;
+  padding: 0 15px;
 }
 
 .logo__item {
@@ -211,12 +226,6 @@ textarea {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/overlay.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
   background-size: cover;
@@ -227,13 +236,14 @@ textarea {
 .hero__title {
   color: var(--text-white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  text-transform: uppercase;
 }
 
 .hero__button {
@@ -243,8 +253,8 @@ textarea {
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px 32px;
-  width: 216px;
+  width: 200px;
+  padding: 10px 24px;
   height: 50px;
   border: 1px solid transparent;
   -webkit-transition-property: background-color, -webkit-box-shadow;
@@ -272,7 +282,6 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding: 60px 15px;
   margin-top: 0;
   margin-bottom: 0;
   -webkit-box-orient: vertical;
@@ -414,7 +423,7 @@ textarea {
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--text-black-color);
 }
 
@@ -425,13 +434,17 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
 }
 
 .team-card {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
 }
 
 .team__img {
@@ -439,6 +452,7 @@ textarea {
   max-width: 100%;
   height: auto;
   margin-bottom: 30px;
+  margin: auto auto 30px auto;
 }
 
 .social-links {
@@ -471,6 +485,7 @@ textarea {
 }
 
 .icon-link {
+  outline: none;
   height: 44px;
   width: 44px;
   background-color: rgb(255, 255, 255);
@@ -517,17 +532,12 @@ textarea {
   fill: var(--text-white-color);
 }
 
-.our-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .gap-30px {
   gap: 30px;
 }
 
 .link-clients {
-  width: 170px;
+  min-width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -567,27 +577,24 @@ textarea {
   fill: var(--text-link-color);
 }
 
+.clients__list {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .footer {
   background-color: var(--main-background-darkblue);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer .logo {
   color: var(--text-white-color);
 }
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-container {
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 70px;
 }
 
@@ -707,7 +714,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-button {
@@ -758,7 +772,10 @@ textarea {
   text-transform: uppercase;
 }
 
-.form-input {
+.footer-container-item {
+  text-align: center;
+}
+.footer-container-item .form-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -766,14 +783,14 @@ textarea {
   background-color: transparent;
   width: 358px;
   height: 50px;
-  padding-left: 16px;
+  text-indent: 16px;
   -webkit-transition: ease-in 250ms;
   transition: ease-in 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.form-input:hover, .form-input:focus {
+.footer-container-item .form-input:hover, .footer-container-item .form-input:focus {
   border: 1px solid rgb(33, 150, 243);
 }
 
@@ -1230,6 +1247,7 @@ html {
   border: 2px solid red;
   margin: 0 auto;
   width: 480px;
+  padding: 60px 15px;
 }
 @media (min-width: 768px) {
   .container {
@@ -1242,7 +1260,27 @@ html {
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.mobile-menu {
+  display: inline-block;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu .icon-close {
+  display: none;
+}
+
+.mobile-menu.is-open .icon-close {
+  display: block;
+}
+
+.mobile-menu.is-open .icon-menu {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
