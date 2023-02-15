@@ -46,19 +46,6 @@ textarea {
   resize: none;
 }
 
-.burger-menu {
-  display: inline-block;
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  width: 40px;
-  height: 40px;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -67,6 +54,7 @@ textarea {
 }
 
 .container.header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +83,9 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navigations__list {
@@ -928,6 +919,8 @@ textarea {
 }
 
 .backdrop {
+  padding-left: 15px;
+  padding-right: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1227,7 +1220,7 @@ textarea {
 
 .modal-comment-link {
   font-family: var(--main-font-family);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7142857143;
   color: var(--text-grey-color);
 }
@@ -1260,7 +1253,7 @@ html {
   }
 }
 
-.mobile-menu {
+.js-open-menu {
   display: inline-block;
   background: none;
   color: inherit;
@@ -1273,14 +1266,207 @@ html {
   height: 40px;
 }
 
-.mobile-menu .icon-close {
+.js-menu-container:not(.is-open) {
   display: none;
 }
 
-.mobile-menu.is-open .icon-close {
+.js-open-menu[aria-expanded=true] .icon-close {
+  display: block;
+}
+.js-open-menu[aria-expanded=true] .icon-menu {
+  display: none;
+}
+
+.js-open-menu[aria-expanded=false] .icon-close {
+  display: none;
+}
+.js-open-menu[aria-expanded=false] .icon-menu {
   display: block;
 }
 
-.mobile-menu.is-open .icon-menu {
-  display: none;
+.js-menu-container {
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navigations__list {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.navigations__list .navigations__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 40px;
+  height: 40px;
+}
+
+.navigations__link {
+  text-decoration: none;
+  color: var(--text-black-color);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.0681818182;
+  letter-spacing: 0.02em;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__link-tel {
+  position: relative;
+  color: var(--text-link-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  font-size: 34px;
+  font-style: normal;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.contact__link-tel {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: ease-in 250ms;
+  transition: ease-in 250ms;
+}
+.contact__link-tel:hover, .contact__link-tel:focus {
+  color: var(--text-link-color);
+}
+
+.contact__link-email {
+  position: relative;
+  color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  font-style: normal;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: ease-in 250ms;
+  transition: ease-in 250ms;
+}
+.contact__link-email:hover, .contact__link-email:focus {
+  color: var(--text-link-color);
+}
+
+.social-links-modal {
+  padding-right: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: ease-in 250ms;
+  transition: ease-in 250ms;
+}
+.social-links-modal:hover, .social-links-modal:focus {
+  color: var(--text-link-color);
+}
+
+.nav-links {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav-links li:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.nav-links li:not(:first-child) {
+  padding-left: 10px;
 }/*# sourceMappingURL=main.css.map */

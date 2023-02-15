@@ -1,4 +1,6 @@
 .backdrop {
+  padding-left: 15px;
+  padding-right: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -245,7 +247,8 @@
 
 .modal-comment-link {
   font-family: var(--main-font-family);
-  font-size: 14px;
+  // font-size: 14px;
+  font-size: 12px;
   line-height: calc(24 / 14);
   color: var(--text-grey-color);
   a {
