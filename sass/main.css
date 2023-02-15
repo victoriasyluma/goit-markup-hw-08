@@ -785,11 +785,6 @@ textarea {
   border: 1px solid rgb(33, 150, 243);
 }
 
-.main-buttons-portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 .container-portfolio {
   max-width: 1200px;
   margin: 0 auto;
@@ -800,11 +795,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
   margin-bottom: 54px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px 15px;
 }
 
 .portfolio-button {
@@ -870,7 +864,7 @@ textarea {
 .text-overlay {
   position: absolute;
   bottom: 111px;
-  width: 370px;
+  width: 100%;
   height: 0;
   background-color: rgba(33, 150, 243, 0.8980392157);
   font-family: var(--main-font-family);
@@ -880,10 +874,20 @@ textarea {
   padding: 62px 24px;
   opacity: 0;
 }
+.text-overlay p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
 
 .h2-p {
   padding: 20px 24px;
-  width: 370px;
+  width: 100%;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -904,6 +908,16 @@ textarea {
   font-weight: 400;
   color: var(--text-grey-color);
   letter-spacing: 0.03em;
+}
+
+.list-element {
+  width: 100%;
+}
+
+.img-block {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 :root {
