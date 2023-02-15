@@ -103,3 +103,10 @@
     fill: var(--text-white-color);
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .team__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

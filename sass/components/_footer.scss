@@ -1,3 +1,5 @@
+@import '../utils/breakpoints';
+
 .footer {
   background-color: var(--main-background-darkblue);
 
@@ -168,6 +170,17 @@
     &:hover,
     &:focus {
       border: 1px solid rgba(33, 150, 243, 1);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .container.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .footer-container-item.footer-email-input {
+      grid-column: span 2;
     }
   }
 }

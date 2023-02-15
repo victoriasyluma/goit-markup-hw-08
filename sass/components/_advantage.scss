@@ -1,12 +1,8 @@
-@media (max-width: 450px) {
-  .container {
-    background-color: red;
-  }
-}
+@import '../utils/breakpoints';
 
-.advantage {
-  // padding-top: 94px;
-}
+// .advantage {
+//   // padding-top: 94px;
+// }
 
 .advantage__list {
   display: flex;
@@ -40,9 +36,16 @@
   }
 }
 
-.advantage__item {
-  // width: 270px;
+@media screen and (min-width: $tablet) {
+  .advantage__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+// .advantage__item {
+//   // width: 270px;
+// }
 
 .advantage__title--opacity {
   margin-top: 0;

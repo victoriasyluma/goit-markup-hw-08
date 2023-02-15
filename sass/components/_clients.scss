@@ -1,3 +1,5 @@
+@import '../utils/breakpoints';
+
 .our-clients {
   // padding-top: 94px;
   // padding-bottom: 94px;
@@ -42,5 +44,9 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.clients__item {
+@media screen and (min-width: $tablet) {
+  .clients__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

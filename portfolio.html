@@ -46,13 +46,6 @@
               ></use>
             </svg>
           </button>
-        </nav>
-      </div>
-      <!-- <div class="container header__container"> -->
-      <!-- <nav class="navigation">
-          <a class="logo" href="./index.html">
-            <span class="logo__item">Web</span>Studio
-          </a>
 
           <ul class="navigations__list">
             <li class="navigations__item">
@@ -69,11 +62,11 @@
               <a class="navigations__link" href="">Контакти</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
 
-      <!--contact menu-->
+        <!--contact menu-->
 
-      <!-- <ul class="contact">
+        <ul class="contact">
           <li class="contact__list">
             <a class="contact__link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16" height="12">
@@ -91,8 +84,8 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>-->
-      <!-- </div> -->
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -324,9 +317,10 @@
     </main>
 
     <!--Footer-->
+
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-container-item">
           <a class="logo" href=""><span class="logo__item">Web</span>Studio </a>
 
           <address class="footer-address">
@@ -358,7 +352,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="footer-container-item">
           <span class="form-title">приєднуйтесь</span>
           <ul class="social-links-form">
             <li>
@@ -411,8 +405,7 @@
           </ul>
         </div>
 
-        <!--inputs-->
-        <div class="footer-email-input">
+        <div class="footer-container-item footer-email-input">
           <span class="form-title">Підпишіться на розсилку</span>
           <form class="form-email">
             <input
@@ -435,22 +428,25 @@
     <!-- MOBILE NAVIGATION MODAL-->
     <div class="js-menu-container">
       <nav>
-        <ul class="navigations__list">
+        <ul class="navigations__list-mobile">
           <li class="navigations__item">
-            <a class="navigations__link" href="./index.html">Студія</a>
+            <a class="navigations__link-mobile" href="./index.html">Студія</a>
           </li>
 
           <li class="navigations__item">
-            <a class="navigations__link" href="./portfolio.html">Портфоліо</a>
+            <a class="navigations__link-mobile" href="./portfolio.html"
+              >Портфоліо</a
+            >
           </li>
 
           <li class="navigations__item">
-            <a class="navigations__link" href="">Контакти</a>
+            <a class="navigations__link-mobile" href="">Контакти</a>
           </li>
         </ul>
       </nav>
+
       <div>
-        <ul class="contact">
+        <ul class="contact-mobile">
           <li class="contact__list">
             <a class="contact__link-tel" href="tel:+380961111111">
               +38 096 111 11 11</a
@@ -472,7 +468,7 @@
             <use class="icon-close" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <ul class="nav-links">
+        <ul class="nav-links-mobile">
           <li>
             <a class="social-links-modal" href="">Instagram</a>
           </li>
@@ -489,7 +485,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
   </body>
 </html>

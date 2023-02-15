@@ -1,11 +1,12 @@
-.main-buttons-portfolio {
-  // padding-bottom: 94px;
-  // padding-top: 94px;
-}
+@import '../utils/breakpoints';
+
+// .main-buttons-portfolio {
+//   // padding-bottom: 94px;
+//   // padding-top: 94px;
+// }
 .container-portfolio {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .container-portfolio {
@@ -66,7 +67,7 @@
       transition-property: opacity, height;
       transition: ease-in 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      height: 294px;
+      height: calc(100% - 111px);
     }
   }
 }
@@ -130,4 +131,18 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: $tablet) {
+  .container-portfolio .main-button-list-portfolio {
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .our-examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

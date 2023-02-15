@@ -1,4 +1,5 @@
 @import '../utils/mixins.scss';
+@import '../utils/breakpoints';
 
 .js-open-menu {
   display: inline-block;
@@ -37,6 +38,12 @@
   }
 }
 
+@media screen and (min-width: $tablet) {
+  .js-open-menu {
+    display: none;
+  }
+}
+
 .js-menu-container {
   padding: 48px 40px;
   display: flex;
@@ -51,7 +58,7 @@
   background-color: #ffffff;
 }
 
-.navigations__list {
+.navigations__list-mobile {
   align-items: start;
   list-style: none;
   padding-left: 0;
@@ -69,7 +76,7 @@
   }
 }
 
-.contact {
+.contact-mobile {
   align-items: start;
   flex-direction: column;
   gap: 32px;
@@ -95,7 +102,7 @@
   height: 40px;
 }
 
-.navigations__link {
+.navigations__link-mobile {
   text-decoration: none;
   color: var(--text-black-color);
   font-size: 44px;
@@ -170,7 +177,7 @@
     color: var(--text-link-color);
   }
 }
-.nav-links {
+.nav-links-mobile {
   margin-top: 64px;
   display: flex;
 
