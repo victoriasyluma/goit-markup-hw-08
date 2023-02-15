@@ -1,9 +1,9 @@
 @import '../utils/breakpoints';
 
-.our-clients {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-}
+// .our-clients {
+//   // padding-top: 94px;
+//   // padding-bottom: 94px;
+// }
 
 .gap-30px {
   gap: 30px;
@@ -48,5 +48,12 @@
   .clients__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .clients__list {
+    display: flex;
+    flex-direction: row;
   }
 }

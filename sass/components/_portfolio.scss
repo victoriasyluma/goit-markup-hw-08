@@ -146,3 +146,10 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .our-examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

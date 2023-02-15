@@ -118,6 +118,9 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
+  .container.header__container {
+    height: 80px;
+  }
   ul.contact {
     display: grid;
     grid-template-columns: auto;
@@ -133,6 +136,22 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.header__container {
+    height: 80px;
+  }
+  ul.contact {
+    grid-template-columns: auto auto;
+  }
+  ul.contact .contact__list:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigations__list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 .navigations__item:not(:last-child) {
@@ -287,6 +306,20 @@ textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__button {
+    padding: 10px 32px;
+    width: 216px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
+}
 .advantage__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,11 +384,28 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantage__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .section__example {
   padding-top: 0px;
   padding-bottom: 94px;
+  display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__example {
+    display: block;
+  }
+}
 .work-example-title {
   font-size: 36px;
   line-height: 1.1666666667;
@@ -435,8 +485,8 @@ textarea {
 }
 
 .our-team-title {
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -554,6 +604,21 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .our-team-title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 .gap-30px {
   gap: 30px;
 }
@@ -609,6 +674,17 @@ textarea {
   .clients__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .footer {
@@ -831,6 +907,23 @@ textarea {
     grid-column: span 2;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container.footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container.footer-container .footer-container-item,
+  .container.footer-container .form-title {
+    text-align: start;
+  }
+  .form-email {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .container-portfolio {
   max-width: 1200px;
   margin: 0 auto;
@@ -979,6 +1072,12 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 :root {
   --text-black-color: #212121;
   --text-link-color: #2196f3;
@@ -1082,6 +1181,8 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  max-width: 528px;
+  width: 100%;
 }
 
 .icon-close {
@@ -1294,24 +1395,32 @@ textarea {
 .modal-comment-link {
   font-family: var(--main-font-family);
   font-size: 12px;
-  line-height: 1.7142857143;
+  line-height: 1.1666666667;
   color: var(--text-grey-color);
 }
 .modal-comment-link a {
   color: var(--text-link-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-comment-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 body,
 html {
   margin: 0;
   padding: 0;
   font-family: var(--main-font-family);
   background-color: #ffffff;
+  min-width: 320px;
 }
 
 .container {
   margin: 0 auto;
   min-width: 320px;
+  max-width: 1200px;
   padding: 60px 15px;
 }
 

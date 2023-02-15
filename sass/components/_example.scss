@@ -1,6 +1,15 @@
+@import '../utils/breakpoints';
+
 .section__example {
   padding-top: 0px;
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: $desktop) {
+  .section__example {
+    display: block;
+  }
 }
 
 .work-example-title {

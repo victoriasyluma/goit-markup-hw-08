@@ -64,3 +64,10 @@
   justify-content: center;
   margin-bottom: 30px;
 }
+
+@media screen and (min-width: $desktop) {
+  .advantage__list {
+    display: flex;
+    flex-direction: row;
+  }
+}

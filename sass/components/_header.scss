@@ -55,6 +55,10 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .container.header__container {
+    height: 80px;
+  }
+
   ul.contact {
     display: grid;
     grid-template-columns: auto;
@@ -68,6 +72,24 @@
   .navigations__list {
     flex: 1;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container.header__container {
+    height: 80px;
+  }
+
+  ul.contact {
+    grid-template-columns: auto auto;
+
+    .contact__list:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .navigations__list {
+    justify-content: left;
   }
 }
 
