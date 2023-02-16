@@ -11,6 +11,7 @@
       "savePath": "/sass"
     }
   ],
+  "liveSassCompile.settings.includeItems": ["/sass/main.scss"],
   "liveSassCompile.settings.excludeList": [
     "/**/node_modules/**",
     "/.vscode/**"
