@@ -326,6 +326,10 @@ textarea {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/_hero/Imghero@2x.jpg");
   }
 }
+.hero {
+  background-color: black;
+}
+
 .advantage__list {
   display: -webkit-box;
   display: -ms-flexbox;
