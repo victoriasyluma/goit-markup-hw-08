@@ -6,12 +6,29 @@ html {
   padding: 0;
   font-family: var(--main-font-family);
   background-color: #ffffff;
+
   min-width: 320px;
+  max-width: calc($tablet - 1px);
 }
 
 .container {
   margin: 0 auto;
-  min-width: 320px;
-  max-width: $desktop;
   padding: 60px 15px;
+  max-width: 100%;
+}
+
+// tablet
+@media screen and (min-width: $tablet), (max-width: calc($desktop - 1px)) {
+  body,
+  html {
+    max-width: $tablet;
+  }
+}
+
+// mobile
+@media screen and (min-width: $desktop), (max-width: 1600px) {
+  body,
+  html {
+    max-width: $tablet;
+  }
 }
