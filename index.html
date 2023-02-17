@@ -172,8 +172,10 @@
               <img
                 class="img-block"
                 src="./images/img_1.jpg"
+                srcset="images/work-example/imgdestop1@2x.jpg 2x"
                 alt="Десктопні додатки, мобільні додатки та дизайнерські рішення"
               />
+
               <div class="work-example__textoverlay">
                 <p>Десктопні додатки</p>
               </div>
@@ -182,6 +184,7 @@
               <img
                 class="img-block"
                 src="./images/img_2.jpg"
+                srcset="images/work-example/imgdestop2@2x.jpg 2x"
                 alt="розробліємо інтерфейс додатку"
               />
               <div class="work-example__textoverlay">
@@ -192,6 +195,7 @@
               <img
                 class="img-block"
                 src="./images/img_3.jpg"
+                srcset="images/work-example/imgdestop3@2x.jpg 2x"
                 alt="дизайн додатку"
               />
               <div class="work-example__textoverlay">
@@ -211,10 +215,27 @@
             <li class="team-card">
               <img
                 class="team__img"
-                src="./images/igor.jpg"
+                srcset="
+                  ./images/our-team/mobile/img_card1@2x.jpg  300w,
+                  ./images/our-team/imgtablet1@2x.jpg        600w,
+                  ./images/our-team/imgdest-team1@2x.jpg    1200w
+                "
+                sizes="screen and (min-width: 1200px) 1200w, screen and (min-width: 768px) and (max-width: calc(1200 - 1px) 600w, 300w"
+                src="./images/our-team/mobile/img_card1@1x.jpg"
                 alt="Ігор Дем'яненко"
                 width="450"
               />
+
+              <!-- <img
+                srcset="
+                  photo-300.jpg   300w,
+                  photo-600.jpg   600w,
+                  photo-1200.jpg 1200w
+                "
+                sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
+                src="photo-300.jpg"
+                alt="Опис зображення для всіх версій"
+              /> -->
               <h3 class="our-team-names">Ігор Дем'яненко</h3>
               <p lang="en" class="our-team-position">Product Designer</p>
 

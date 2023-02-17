@@ -266,6 +266,9 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+.hero .container {
+  padding: 118px 60px;
+}
 
 .hero__title {
   color: var(--text-white-color);

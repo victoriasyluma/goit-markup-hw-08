@@ -3,12 +3,6 @@
 .hero {
   background-color: #2f303a;
   text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // width: 1600px;
-  // height: 600px;
-  // margin-left: auto;
-  // margin-right: auto;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -19,6 +13,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  .container {
+    padding: 118px 60px;
+  }
 }
 
 .hero__title {
