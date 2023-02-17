@@ -1,11 +1,10 @@
 @import '../utils/breakpoints';
-
-// .advantage {
-//   // padding-top: 94px;
-// }
+@import '../utils/mixins.scss';
 
 .advantage__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+
   list-style: none;
 
   margin-top: 0;
@@ -36,17 +35,6 @@
   }
 }
 
-@media screen and (min-width: $tablet) {
-  .advantage__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// .advantage__item {
-//   // width: 270px;
-// }
-
 .advantage__title--opacity {
   margin-top: 0;
   margin-bottom: 0;
@@ -65,9 +53,22 @@
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: $desktop) {
+@include media-tablet {
   .advantage__list {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include media-desktop {
+  .advantage__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@include media-tablet-and-desktop {
+  .advantage__list {
+    .advantage__title {
+      text-align: left;
+    }
   }
 }
