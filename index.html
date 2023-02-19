@@ -175,6 +175,7 @@
                 srcset="images/work-example/imgdestop1@2x.jpg 2x"
                 alt="Десктопні додатки, мобільні додатки та дизайнерські рішення"
               />
+              
 
               <div class="work-example__textoverlay">
                 <p>Десктопні додатки</p>
@@ -216,26 +217,34 @@
               <img
                 class="team__img"
                 srcset="
-                  ./images/our-team/mobile/img_card1@2x.jpg  300w,
-                  ./images/our-team/imgtablet1@2x.jpg        600w,
+                  ./images/our-team/mobile/img_card1@2x.jpg  320w,
+                  ./images/our-team/imgtablet1@2x.jpg       768w,
                   ./images/our-team/imgdest-team1@2x.jpg    1200w
                 "
-                sizes="screen and (min-width: 1200px) 1200w, screen and (min-width: 768px) and (max-width: calc(1200 - 1px) 600w, 300w"
+                sizes="screen and (min-width: 1200px) 1200w, screen and (min-width: 768px)768w, (max-width: calc(1200 - 1px) 768w"
                 src="./images/our-team/mobile/img_card1@1x.jpg"
                 alt="Ігор Дем'яненко"
                 width="450"
+                loading="lazy"
               />
-
-              <!-- <img
-                srcset="
-                  photo-300.jpg   300w,
-                  photo-600.jpg   600w,
-                  photo-1200.jpg 1200w
-                "
-                sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
-                src="photo-300.jpg"
-                alt="Опис зображення для всіх версій"
-              /> -->
+            <!-- <img
+  class="team-avatar"
+  srcset="
+    ./images/img1-370.jpg 370w,
+    ./images/img1-418.jpg 418w,
+    ./images/img1-450.jpg 450w,
+    ./images/img1-740.jpg 740w,
+    ./images/img1-836.jpg 836w,
+    ./images/img1-900.jpg 900w
+  "
+  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+  src="./images/img1-418.jpg"
+  alt="John Smith"
+  width="450"
+  height="346"
+  loading="lazy"
+/> -->
+            
               <h3 class="our-team-names">Ігор Дем'яненко</h3>
               <p lang="en" class="our-team-position">Product Designer</p>
 
@@ -294,8 +303,16 @@
               <img
                 class="team__img"
                 src="./images/olga.jpg"
-                alt="Ольга Рєпіна"
+                srcset="
+                  ./images/our-team/mobile/imgcard2@2x.jpg  320w,
+                  ./images/our-team/imgtablet2@2x.jpg       768w,
+                  ./images/our-team/imgdest-team2@2x.jpg   1200w
+                "
+                sizes="screen and (min-width: 1200px) 1200w, screen and (min-width: 768px)768w, (max-width: calc(1200 - 1px) 768w"
                 width="450"
+                loading="lazy"
+                alt="Ольга Рєпіна"
+               
               />
               <h3 class="our-team-names">Ольга Рєпіна</h3>
               <p lang="en" class="our-team-position">Frontend Developer</p>
@@ -353,6 +370,14 @@
 
             <li class="team-card">
               <img
+                srcset="
+                  ./images/our-team/imgdest-team3@2x.jpg  320w,
+                  ./images/our-team/imgtablet3@2x.jpg      768w,
+                  ./images/our-team/imgdest-team3@2x.jpg   1200w
+                "
+
+                loading="lazy"
+                sizes="screen and (min-width: 1200px) 1200w, screen and (min-width: 768px)768w, (max-width: calc(1200 - 1px) 768w"
                 class="team__img"
                 src="./images/mucola.jpg"
                 alt="Микола Тарасов"
@@ -414,6 +439,16 @@
 
             <li class="team-card">
               <img
+              
+                srcset="
+                  ./images/our-team/mobile/imgcard4@2x.jpg  320w,
+                  ./images/our-team/imgtablet4@2x.jpg    768w,
+                  ./images/our-team/imgdest-team4@2x.jpg   1200w
+                "
+
+                loading="lazy"
+                sizes="screen and (min-width: 1200px) 1200w, screen and (min-width: 768px)768w, (max-width: calc(1200 - 1px) 768w"
+
                 class="team__img"
                 src="./images/mihail.jpg"
                 alt="Михайло Єрмаков"
