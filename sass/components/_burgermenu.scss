@@ -180,6 +180,7 @@
 .nav-links-mobile {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 
   li:not(:last-child) {
     border-right: 1px solid #21212133;
