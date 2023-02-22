@@ -182,6 +182,9 @@ textarea {
 .navigations__link:hover, .navigations__link:focus {
   color: var(--text-link-color);
 }
+.navigations__link.selected {
+  color: var(--text-link-color);
+}
 .navigations__link.selected:after {
   content: "";
   position: absolute;
@@ -410,8 +413,6 @@ textarea {
 .section__example {
   padding-top: 0px;
   padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
   display: none;
 }
 
@@ -1432,7 +1433,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 215px;
+    padding: 94px 0px;
   }
 }
 
@@ -1455,7 +1456,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   footer {
-    padding: 60px 215px;
+    padding: 60px 0px;
   }
 }
 

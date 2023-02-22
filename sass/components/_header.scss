@@ -116,7 +116,10 @@
     color: var(--text-link-color);
   }
 
-  &.selected:after {
+  &.selected {
+    color: var(--text-link-color);
+
+    &:after {
     content: '';
 
     position: absolute;
@@ -127,6 +130,7 @@
     border-radius: 2px;
     bottom: 0;
     left: 0;
+  }
   }
 }
 
