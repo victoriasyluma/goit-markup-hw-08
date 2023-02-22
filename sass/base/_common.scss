@@ -7,10 +7,34 @@ html {
   background-color: #ffffff;
 }
 
+.section {
+  padding: 60px 15px;
+
+  @include media-desktop {
+    padding: 94px 215px;
+  }
+}
+
+.section_portfolio{
+  padding: 60px 15px;
+
+  @include media-desktop {
+    padding: 94px 0px;
+  }
+}
+
+
 .container {
   margin: 0 auto;
-  padding: 60px 15px;
+  // padding: 60px 15px;
   max-width: 480px;
+}
+
+footer{
+ padding: 60px 15px;
+  @include media-desktop{
+    padding: 60px 215px;
+   }
 }
 
 header, main, footer, [data-modal], .js-menu-container {

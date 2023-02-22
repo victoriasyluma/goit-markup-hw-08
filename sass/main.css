@@ -410,6 +410,8 @@ textarea {
 .section__example {
   padding-top: 0px;
   padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
   display: none;
 }
 
@@ -1425,10 +1427,36 @@ html {
   background-color: #ffffff;
 }
 
+.section {
+  padding: 60px 15px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 215px;
+  }
+}
+
+.section_portfolio {
+  padding: 60px 15px;
+}
+@media screen and (min-width: 1200px) {
+  .section_portfolio {
+    padding: 94px 0px;
+  }
+}
+
 .container {
   margin: 0 auto;
-  padding: 60px 15px;
   max-width: 480px;
+}
+
+footer {
+  padding: 60px 15px;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 60px 215px;
+  }
 }
 
 header, main, footer, [data-modal], .js-menu-container {
