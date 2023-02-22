@@ -3,8 +3,6 @@
 
 body,
 html {
-  margin: 0;
-  padding: 0;
   font-family: var(--main-font-family);
   background-color: #ffffff;
 }
@@ -15,14 +13,14 @@ html {
   max-width: 480px;
 }
 
-body {
+header, main, footer, [data-modal], .js-menu-container {
   min-width: 320px;
   max-width: calc($tablet - 1px);
   margin: auto;
 }
 
 @include media-tablet {
-  body {
+  header, main, footer, [data-modal], .js-menu-container {
     max-width: $tablet;
   }
 
@@ -32,7 +30,7 @@ body {
 }
 
 @include media-desktop {
-  body {
+  header, main, footer, [data-modal], .js-menu-container {
     max-width: 1600px;
   }
 

@@ -37,7 +37,6 @@ ul {
 }
 
 a {
-  outline: none;
   text-decoration: none;
   color: inherit;
 }
@@ -267,10 +266,6 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero .container {
-  padding: 118px 60px;
-}
-
 .hero__title {
   color: var(--text-white-color);
   font-weight: 900;
@@ -558,7 +553,6 @@ textarea {
 }
 
 .icon-link {
-  outline: none;
   height: 44px;
   width: 44px;
   background-color: rgb(255, 255, 255);
@@ -891,7 +885,6 @@ textarea {
   transition: ease-in 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
 }
 .footer-container-item .form-input:hover, .footer-container-item .form-input:focus {
   border: 1px solid rgb(33, 150, 243);
@@ -993,6 +986,7 @@ textarea {
 
 .list__link {
   position: relative;
+  outline: none;
 }
 
 .list__link:hover .text-overlay, .list__link:focus .text-overlay {
@@ -1417,8 +1411,6 @@ textarea {
 }
 body,
 html {
-  margin: 0;
-  padding: 0;
   font-family: var(--main-font-family);
   background-color: #ffffff;
 }
@@ -1429,14 +1421,14 @@ html {
   max-width: 480px;
 }
 
-body {
+header, main, footer, [data-modal], .js-menu-container {
   min-width: 320px;
   max-width: 767px;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  body {
+  header, main, footer, [data-modal], .js-menu-container {
     max-width: 768px;
   }
   .container {
@@ -1444,7 +1436,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  body {
+  header, main, footer, [data-modal], .js-menu-container {
     max-width: 1600px;
   }
   .container {
