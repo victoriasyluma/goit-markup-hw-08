@@ -266,6 +266,20 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+.hero {
+  padding: 118px 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
+  }
+}
+
 .hero__title {
   color: var(--text-white-color);
   font-weight: 900;
@@ -306,10 +320,6 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
   .hero__button {
     padding: 10px 32px;
     width: 216px;

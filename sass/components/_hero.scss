@@ -20,6 +20,21 @@
   }
 }
 
+.hero{
+  padding: 118px 60px;
+
+  @include media-tablet{
+    padding: 118px 204px;
+    
+  }
+
+  @include media-desktop {
+    padding: 200px 0px;
+  }
+}
+
+
+
 .hero__title {
   color: var(--text-white-color);
   font-weight: 900;
@@ -59,10 +74,7 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+ 
   .hero__button {
     padding: 10px 32px;
     width: 216px;
